@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/objectType.xsd">
+	<import>
+		<!-- box controllers -->
+		<type>
+			<name>com.uz.wcf.absence.absentMembers</name>
+			<definitionname>com.woltlab.wcf.boxController</definitionname>
+			<classname>wcf\system\box\AbsentMembersBoxController</classname>
+		</type>
+		
+		<!-- conditions -->
+		<!-- ad conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.ad</name>
+			<definitionname>com.woltlab.wcf.condition.ad</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditionobject>com.woltlab.wcf.user</conditionobject>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<!-- notice conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.notice</name>
+			<definitionname>com.woltlab.wcf.condition.notice</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditionobject>com.woltlab.wcf.user</conditionobject>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<!-- user bulk processing conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.bulkProccessing</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.condition</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<!-- user group assignment conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.userGroupAssignment</name>
+			<definitionname>com.woltlab.wcf.condition.userGroupAssignment</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<!-- user search conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.userSearch</name>
+			<definitionname>com.woltlab.wcf.condition.userSearch</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		<!-- trophy conditions -->
+		<type>
+			<name>com.uz.wcf.absence.condition.trophy</name>
+			<definitionname>com.woltlab.wcf.condition.trophy</definitionname>
+			<classname>wcf\system\condition\UserAbsenceCondition</classname>
+			<conditiongroup>general</conditiongroup>
+		</type>
+		
+		<!--  recent activity -->
+		<type>
+			<name>com.uz.wcf.absence.recentActivityEvent.submit</name>
+			<definitionname>com.woltlab.wcf.user.recentActivityEvent</definitionname>
+			<classname>wcf\system\user\activity\event\AbsenceUserActivityEvent</classname>
+		</type>
+		
+		<!-- stat handlers -->
+		<type>
+			<name>com.uz.wcf.absence</name>
+			<definitionname>com.woltlab.wcf.statDailyHandler</definitionname>
+			<classname>wcf\system\stat\AbsenceStatDailyHandler</classname>
+			<default>0</default>
+			<categoryname>com.woltlab.wcf.user</categoryname>
+		</type>
+		
+		<!-- user bulk processing actions -->
+		<type>
+			<name>com.uz.wcf.absence.delete</name>
+			<definitionname>com.woltlab.wcf.bulkProcessing.user.action</definitionname>
+			<classname>wcf\system\bulk\processing\user\AbsenceDeleteBulkProcessingAction</classname>
+			<action>absenceDelete</action>
+			<permissions>mod.absence.canDeleteAbsence</permissions>
+		</type>
+	</import>
+</data>

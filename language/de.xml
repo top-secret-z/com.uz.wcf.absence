@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+	<category name="wcf.acp.absence">
+		<item name="wcf.acp.absence.autoAbsent"><![CDATA[Der Benutzer wurde automatisch auf „Abwesend“ gesetzt.]]></item>
+	</category>
+	
+	<category name="wcf.acp.box">
+		<item name="wcf.acp.box.boxController.com.uz.wcf.absence.absentMembers"><![CDATA[Abwesende Mitglieder]]></item>
+	</category>
+	
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.profile.absence"><![CDATA[Abwesenheit]]></item>
+		<item name="wcf.acp.group.option.category.mod.absence"><![CDATA[Abwesenheit]]></item>
+		<item name="wcf.acp.group.option.mod.absence.canDeleteAbsence"><![CDATA[Kann Abwesenheiten anderer Benutzer löschen]]></item>
+		<item name="wcf.acp.group.option.user.profile.canViewAbsence"><![CDATA[Kann Abwesenheiten sehen]]></item>
+		<item name="wcf.acp.group.option.user.profile.canUseAbsence"><![CDATA[Kann Abwesenheiten angeben]]></item>
+		<item name="wcf.acp.group.option.user.profile.canUseAbsenceRep"><![CDATA[Kann Vertretung bei Abwesenheit angeben]]></item>
+	</category>
+	
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_absence"><![CDATA[Abwesenheiten]]></item>
+		<item name="wcf.acp.option.module_absence_activity"><![CDATA[Abwesenheiten - Aktivität]]></item>
+		<item name="wcf.acp.option.category.user.absence"><![CDATA[Abwesenheiten]]></item>
+		<item name="wcf.acp.option.category.user.absence.auto"><![CDATA[Automatik]]></item>
+		<item name="wcf.acp.option.category.user.absence.display"><![CDATA[Anzeige]]></item>
+		<item name="wcf.acp.option.category.user.absence.rep"><![CDATA[Vertretung]]></item>
+		<item name="wcf.acp.option.absence_auto_days"><![CDATA[Abwesend nach]]></item>
+		<item name="wcf.acp.option.absence_auto_days.description"><![CDATA[Benutzer werden nach der angegebenen Zeit ohne Aktivität auf abwesend gesetzt. 0 eingeben, um Benutzer nicht automatisch auf abwesend zu setzen.]]></item>
+		<item name="wcf.acp.option.absence_display_hideAuto"><![CDATA[Automatische Abwesenheiten verstecken]]></item>
+		<item name="wcf.acp.option.absence_display_hideAuto.description"><![CDATA[Automatisch abwesende Benutzer werden nicht in Listen und Boxen angezeigt.]]></item>
+		<item name="wcf.acp.option.absence_display_record"><![CDATA[Rekord anzeigen]]></item>
+		<item name="wcf.acp.option.absence_display_sidebar"><![CDATA[Seitenleiste]]></item>
+		<item name="wcf.acp.option.absence_display_sidebar.description"><![CDATA[Die Abwesenheit wird in der linken Seitenleiste unterhalb des Avatars angezeigt.]]></item>
+		<item name="wcf.acp.option.absence_display_sidebar_color"><![CDATA[Farbe]]></item>
+		<item name="wcf.acp.option.absence_display_sidebar_color.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Wähle{else}Wählen Sie{/if} die Farbe des Badges für die Seitenleiste.]]></item>
+		<item name="wcf.acp.option.absence_display_time"><![CDATA[Uhrzeit]]></item>
+		<item name="wcf.acp.option.absence_display_time.description"><![CDATA[Uhrzeit der Abwesenheit anzeigen.]]></item>
+		<item name="wcf.acp.option.absence_display_userInfo"><![CDATA[Benutzer-Information]]></item>
+		<item name="wcf.acp.option.absence_display_userInfo.description"><![CDATA[Die Abwesenheit wird bei den Benutzer-Informationen in Listen angezeigt.]]></item>
+		<item name="wcf.acp.option.absence_display_warning"><![CDATA[Hinweis]]></item>
+		<item name="wcf.acp.option.absence_display_warning.description"><![CDATA[Es wird ein Hinweis eingeblendet, wenn abwesende Benutzer online sind.]]></item>
+		<item name="wcf.acp.option.absence_rep_enable"><![CDATA[Vertretungen zulassen]]></item>
+		<item name="wcf.acp.option.absence_rep_enable.description"><![CDATA[Benutzer können während ihrer Abwesenheit eine Vertretung angeben, wenn sie über das entsprechende Benutzergruppenrecht verfügen.]]></item>
+		<item name="wcf.acp.option.absence_auto_exclude"><![CDATA[Ausgeschlossene Gruppen]]></item>
+		<item name="wcf.acp.option.absence_auto_exclude.description"><![CDATA[Benutzer, die den ausgewählten Gruppen angehören, werden nicht automatisch auf abwesend gesetzt.]]></item>
+		<item name="wcf.acp.option.absence_auto_reason"><![CDATA[Grund]]></item>
+		<item name="wcf.acp.option.absence_auto_reason.description"><![CDATA[Grund für die Abwesenheit bei automatisch abwesenden Benutzern.]]></item>
+		<item name="wcf.acp.option.absence_auto_reset"><![CDATA[Reset]]></item>
+		<item name="wcf.acp.option.absence_auto_reset.description"><![CDATA[Automatisch abwesende Benutzer werden wieder auf anwesend gesetzt, sobald sie wieder online sind.]]></item>
+	</category>
+	
+	<category name="wcf.acp.stat">
+		<item name="wcf.acp.stat.com.uz.wcf.absence"><![CDATA[Abwesenheiten]]></item>
+	</category>
+	
+	<category name="wcf.acp.user">
+		<item name="wcf.acp.user.bulkProcessing.absenceDelete"><![CDATA[Abwesenheiten zurücksetzen]]></item>
+	</category>
+	
+	<category name="wcf.user">
+		<item name="wcf.user.sortField.absentFrom"><![CDATA[Abwesend von]]></item>
+		<item name="wcf.user.sortField.absentTo"><![CDATA[Abwesend bis]]></item>
+	</category>
+	
+	<category name="wcf.user.absence">
+		<item name="wcf.user.absence.absent"><![CDATA[Abwesend]]></item>
+		<item name="wcf.user.absence.box.sort.absentTo"><![CDATA[Abwesend bis]]></item>
+		<item name="wcf.user.absence.box.sort.absentFrom"><![CDATA[Abwesend von]]></item>
+		<item name="wcf.user.absence.box.sort.username"><![CDATA[Benutzername]]></item>
+		<item name="wcf.user.absence.box.title"><![CDATA[Abwesenheiten]]></item>
+		<item name="wcf.user.absence.delete"><![CDATA[Abwesenheit löschen]]></item>
+		<item name="wcf.user.absence.delete.confirm"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Willst Du{else}Wollen Sie{/if} diese Abwesenheit wirklich löschen?]]></item>
+		<item name="wcf.user.absence.detail"><![CDATA[{#$total} Mitglied{if $total != 1}er{/if}]]></item>
+		<item name="wcf.user.absence.detail.record"><![CDATA[Rekord: {#ABSENCE_DISPLAY_RECORD_COUNT} {if ABSENCE_DISPLAY_RECORD_COUNT == 1}Mitglied{else}Mitglieder{/if} ({@ABSENCE_DISPLAY_RECORD_TIME|time})]]></item>
+		<item name="wcf.user.absence.footer.detail"><![CDATA[{#$total} Mitglied{if $total != 1}er{/if}]]></item>
+		<item name="wcf.user.absence.footer.more"><![CDATA[{#$diff} mehr]]></item>
+		<item name="wcf.user.absence.info.profile"><![CDATA[Abwesend von {@$user->absentFrom|plainTime} bis {@$user->absentTo|plainTime}.{if $rep} Vertretung: <a href="{$rep->getLink()}" data-object-id="{$rep->userID}" class="userLink">{@$rep->getUsername()}</a>.{/if}{if $user->absentReason}<br><small>Grund: {$user->absentReason}.</small>{/if}]]></item>
+		<item name="wcf.user.absence.info.profile.noTime"><![CDATA[Abwesend vom {@$user->absentFrom|date} bis {@$user->absentTo|date}.{if $rep} Vertretung: <a href="{$rep->getLink()}" data-object-id="{$rep->userID}" class="userLink">{@$rep->getUsername()}</a>.{/if}{if $user->absentReason}<br><small>Grund: {$user->absentReason}.</small>{/if}]]></item>
+		<item name="wcf.user.absence.info.tooltip"><![CDATA[Von {@$user->absentFrom|plainTime} bis {@$user->absentTo|plainTime}. {if $user->absentReason}{$user->absentReason}{/if}]]></item>
+		<item name="wcf.user.absence.info.tooltip.noTime"><![CDATA[Vom {@$user->absentFrom|date} bis {@$user->absentTo|date}. {if $user->absentReason}{$user->absentReason}{/if}]]></item>
+		<item name="wcf.user.absence.info.tooltip.userProfile"><![CDATA[Von {@$userProfile->absentFrom|plainTime} bis {@$userProfile->absentTo|plainTime}.{if $rep} Vertretung: {$rep->getUsername()}.{/if}{if $userProfile->absentReason} Grund: {$userProfile->absentReason}{/if}]]></item>
+		<item name="wcf.user.absence.info.tooltip.userProfile.noTime"><![CDATA[Vom {@$userProfile->absentFrom|date} bis {@$userProfile->absentTo|date}.{if $rep} Vertretung: {$rep->getUsername()}.{/if}{if $userProfile->absentReason} Grund: {$userProfile->absentReason}{/if}]]></item>
+		<item name="wcf.user.absence.info.userInformation"><![CDATA[abwesend bis {@$user->absentTo|plainTime}]]></item>
+		<item name="wcf.user.absence.info.userInformation.noTime"><![CDATA[abwesend bis {@$user->absentTo|date}]]></item>
+		<item name="wcf.user.absence.noAbsentUsers"><![CDATA[Es wurden keine Mitglieder gefunden. <a href="{link controller='AbsentMembersList'}{/link}">Die aktiven Filter zurücksetzen.</a>]]></item>
+		<item name="wcf.user.absence.recentActivity.submit"><![CDATA[Hat eine <a href="{link controller='User' object=$user}{/link}">Abwesenheit</a> eingetragen.]]></item>
+		<item name="wcf.user.absence.setting"><![CDATA[Abwesenheit]]></item>
+		<item name="wcf.user.absence.setting.description"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Wähle{else}Wählen Sie{/if} den Zeitraum {if LANGUAGE_USE_INFORMAL_VARIANT}deiner{else}Ihrer{/if} Abwesenheit oder {if LANGUAGE_USE_INFORMAL_VARIANT}lösche{else}löschen Sie{/if} beide Zeiten, um nicht mehr abwesend zu sein.]]></item>
+		<item name="wcf.user.absence.setting.from"><![CDATA[Beginn]]></item>
+		<item name="wcf.user.absence.setting.from.error.empty"><![CDATA[Es müssen beide Zeiten angegeben werden bzw. leer sein.]]></item>
+		<item name="wcf.user.absence.setting.from.error.invalid"><![CDATA[Ungültige Zeitangabe.]]></item>
+		<item name="wcf.user.absence.setting.period"><![CDATA[Zeitraum]]></item>
+		<item name="wcf.user.absence.setting.reason"><![CDATA[Grund]]></item>
+		<item name="wcf.user.absence.setting.reason.detail"><![CDATA[Optionaler Grund]]></item>
+		<item name="wcf.user.absence.setting.reason.error.tooLong"><![CDATA[Der Grund darf maximal 255 Zeichen lang sein.]]></item>
+		<item name="wcf.user.absence.setting.rep"><![CDATA[Vertretung]]></item>
+		<item name="wcf.user.absence.setting.repName"><![CDATA[Benutzername]]></item>
+		<item name="wcf.user.absence.setting.repName.description"><![CDATA[Benutzer, der während {if LANGUAGE_USE_INFORMAL_VARIANT}deiner{else}Ihrer{/if} Abwesenheit als Vertretung benannt wird.]]></item>
+		<item name="wcf.user.absence.setting.repName.error.notFound"><![CDATA[Der Benutzer konnte nicht gefunden werden.]]></item>
+		<item name="wcf.user.absence.setting.repName.error.notSelf"><![CDATA[Dieser Benutzer kann keine Vertretung sein.]]></item>
+		<item name="wcf.user.absence.setting.to"><![CDATA[Ende]]></item>
+		<item name="wcf.user.absence.setting.to.error.empty"><![CDATA[Es müssen beide Zeiten angegeben werden bzw. leer sein.]]></item>
+		<item name="wcf.user.absence.setting.to.error.inPast"><![CDATA[Das Ende liegt in der Vergangenheit.]]></item>
+		<item name="wcf.user.absence.setting.to.error.invalid"><![CDATA[Ungültige Zeitangabe.]]></item>
+		<item name="wcf.user.absence.setting.to.error.toBeforeFrom"><![CDATA[Der Beginn muss vor dem Ende liegen.]]></item>
+		<item name="wcf.user.absence.sort.from"><![CDATA[Abwesend von]]></item>
+		<item name="wcf.user.absence.sort.to"><![CDATA[Abwesend bis]]></item>
+		<item name="wcf.user.absence.until"><![CDATA[bis]]></item>
+		<item name="wcf.user.absence.warning.online"><![CDATA[{if LANGUAGE_USE_INFORMAL_VARIANT}Du hast{else}Sie haben{/if} eine <a href="{link controller='AbsenceSettings'}{/link}">Abwesenheit</a> eingetragen, {if LANGUAGE_USE_INFORMAL_VARIANT}bist{else}sind{/if} aber online.]]></item>
+	</category>
+	
+	<category name="wcf.user.condition">
+		<item name="wcf.user.condition.absence"><![CDATA[Abwesenheiten]]></item>
+		<item name="wcf.user.condition.absence.isAbsent"><![CDATA[Abwesend]]></item>
+		<item name="wcf.user.condition.absence.isAbsent.error.conflict"><![CDATA[„Abwesend“ und „Nicht abwesend“ können nicht gleichzeitig ausgewählt werden.]]></item>
+		<item name="wcf.user.condition.absence.isNotAbsent"><![CDATA[Nicht abwesend]]></item>
+	</category>
+	
+	<category name="wcf.user.menu">
+		<item name="wcf.user.menu.settings.absence"><![CDATA[Abwesenheit]]></item>
+	</category>
+	
+	<category name="wcf.user.recentActivity">
+		<item name="wcf.user.recentActivity.com.uz.wcf.absence.recentActivityEvent.submit"><![CDATA[Abwesenheit]]></item>
+	</category>
+</language>

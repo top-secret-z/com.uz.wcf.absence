@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/box.xsd">
+	<import>
+		<box identifier="com.uz.wcf.absence.absentMembers">
+			<name language="de">Abwesende Mitglieder</name>
+			<name language="en">Absent Members</name>
+			<boxType>system</boxType>
+			<objectType>com.uz.wcf.absence.absentMembers</objectType>
+			<position>sidebarRight</position>
+			<showHeader>1</showHeader>
+			<visibleEverywhere>0</visibleEverywhere>
+			<sortField>username</sortField>
+			<sortOrder>ASC</sortOrder>
+			<limit>5</limit>
+			
+			<content language="de">
+				<title>Abwesende Mitglieder</title>
+			</content>
+			<content language="en">
+				<title>Absent Members</title>
+			</content>
+		</box>
+	</import>
+</data>

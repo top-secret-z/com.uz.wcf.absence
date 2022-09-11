@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/templateListener.xsd">
+	<import>
+		<templatelistener name="absenceUserAddTabMenuTabs">
+			<environment>admin</environment>
+			<templatename>userAdd</templatename>
+			<eventname>tabMenuTabs</eventname>
+			<templatecode><![CDATA[{include file='__absenceUserAddTabMenuTabs'}]]></templatecode>
+		</templatelistener>
+		<templatelistener name="absenceUserAddTabMenuContents">
+			<environment>admin</environment>
+			<templatename>userAdd</templatename>
+			<eventname>tabMenuContents</eventname>
+			<templatecode><![CDATA[{include file='__absenceUserAddTabMenuContents'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="absenceHeaderProfile">
+			<environment>user</environment>
+			<templatename>header</templatename>
+			<eventname>contents</eventname>
+			<templatecode><![CDATA[{include file='__absenceHeaderProfile'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="absenceUserInformationHeadline">
+			<environment>user</environment>
+			<templatename>userInformationHeadline</templatename>
+			<eventname>userData</eventname>
+			<templatecode><![CDATA[{include file='__absenceUserInformationHeadline'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="absenceMessageSidebar">
+			<environment>user</environment>
+			<templatename>messageSidebar</templatename>
+			<eventname>beforeCredits</eventname>
+			<templatecode><![CDATA[{include file='__absenceMessageSidebar'}]]></templatecode>
+		</templatelistener>
+	</import>
+</data>

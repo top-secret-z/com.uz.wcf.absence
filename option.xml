@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/option.xsd">
+	<import>
+		<categories>
+			<category name="user.absence">
+				<parent>user</parent>
+			</category>
+			<category name="user.absence.display">
+				<parent>user.absence</parent>
+				<showorder>1</showorder>
+			</category>
+			<category name="user.absence.rep">
+				<parent>user.absence</parent>
+				<showorder>2</showorder>
+			</category>
+			<category name="user.absence.auto">
+				<parent>user.absence</parent>
+				<showorder>3</showorder>
+			</category>
+		</categories>
+		<options>
+			<option name="module_absence">
+				<categoryname>module.user</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="module_absence_activity">
+				<categoryname>module.user</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="absence_display_sidebar">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+				<enableoptions>absence_display_sidebar_color</enableoptions>
+			</option>
+			<option name="absence_display_sidebar_color">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>select</optiontype>
+				<defaultvalue>red</defaultvalue>
+				<selectoptions>black
+blue
+brown
+green
+orange
+pink
+purple
+red
+yellow</selectoptions>
+			</option>
+			
+			<option name="absence_display_userInfo">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="absence_display_warning">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="absence_display_hideAuto">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="absence_display_record">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="absence_display_record_count">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>integer</optiontype>
+				<hidden>1</hidden>
+			</option>
+			<option name="absence_display_record_time">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>integer</optiontype>
+				<hidden>1</hidden>
+			</option>
+			
+			<option name="absence_display_time">
+				<categoryname>user.absence.display</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			
+			<option name="absence_rep_enable">
+				<categoryname>user.absence.rep</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+			</option>
+			
+			<option name="absence_auto_days">
+				<categoryname>user.absence.auto</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<minvalue>0</minvalue>
+				<suffix>days</suffix>
+			</option>
+			<option name="absence_auto_reset">
+				<categoryname>user.absence.auto</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<option name="absence_auto_exclude">
+				<categoryname>user.absence.auto</categoryname>
+				<optiontype>absenceUserGroup</optiontype>
+			</option>
+			<option name="absence_auto_reason">
+				<categoryname>user.absence.auto</categoryname>
+				<optiontype>textI18n</optiontype>
+				<supporti18n>1</supporti18n>
+			</option>
+		</options>
+	</import>
+</data>
