@@ -1,63 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/eventListener.xsd">
-	<import>
-		<eventlistener name="absenceUserAddAssign">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>assignVariables</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="absenceUserAddReadForm">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>readFormParameters</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="absenceUserAddSave">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>save</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="absenceUserAddSaved">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>saved</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		<eventlistener name="absenceUserAddValidate">
-			<eventclassname>wcf\acp\form\UserAddForm</eventclassname>
-			<eventname>validate</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<inherit>1</inherit>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<eventlistener name="absenceUserEditReadData">
-			<eventclassname>wcf\acp\form\UserEditForm</eventclassname>
-			<eventname>readData</eventname>
-			<listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-		
-		<eventlistener name="absentMemberListPage">
-			<eventclassname>wcf\page\MembersListPage</eventclassname>
-			<eventname>readParameters</eventname>
-			<environment>user</environment>
-			<inherit>1</inherit>
-			<listenerclassname>wcf\system\event\listener\AbsentMembersListPageListener</listenerclassname>
-		</eventlistener>
-		
-		<!-- GDPR -->
-		<eventlistener name="contactGdprExport">
-			<eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
-			<eventname>export</eventname>
-			<listenerclassname>wcf\system\event\listener\UzAbsenceGdprExportListener</listenerclassname>
-			<environment>admin</environment>
-		</eventlistener>
-	</import>
+    <import>
+        <eventlistener name="absenceUserAddAssign">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>assignVariables</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="absenceUserAddReadForm">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>readFormParameters</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="absenceUserAddSave">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>save</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="absenceUserAddSaved">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>saved</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+        <eventlistener name="absenceUserAddValidate">
+            <eventclassname>wcf\acp\form\UserAddForm</eventclassname>
+            <eventname>validate</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <inherit>1</inherit>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <eventlistener name="absenceUserEditReadData">
+            <eventclassname>wcf\acp\form\UserEditForm</eventclassname>
+            <eventname>readData</eventname>
+            <listenerclassname>wcf\system\event\listener\AbsenceUserAddFormListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+
+        <eventlistener name="absentMemberListPage">
+            <eventclassname>wcf\page\MembersListPage</eventclassname>
+            <eventname>readParameters</eventname>
+            <environment>user</environment>
+            <inherit>1</inherit>
+            <listenerclassname>wcf\system\event\listener\AbsentMembersListPageListener</listenerclassname>
+        </eventlistener>
+
+        <!-- GDPR -->
+        <eventlistener name="contactGdprExport">
+            <eventclassname>wcf\acp\action\UserExportGdprAction</eventclassname>
+            <eventname>export</eventname>
+            <listenerclassname>wcf\system\event\listener\UzAbsenceGdprExportListener</listenerclassname>
+            <environment>admin</environment>
+        </eventlistener>
+    </import>
 </data>

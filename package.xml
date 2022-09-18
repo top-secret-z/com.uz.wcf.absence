@@ -1,103 +1,123 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="com.uz.wcf.absence" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
-	<packageinformation>
-		<packagename>Absences</packagename>
-		<packagedescription>Allows users to specify absences from the community and indicate them to other users.</packagedescription>
-		<packagename language="de">Abwesenheiten</packagename>
-		<packagedescription language="de">Ermöglicht es Benutzern, Abwesenheiten von der Community anzugeben und diese anderen Benutzern anzuzeigen.</packagedescription>
-		<version>5.5.1</version>
-		<date>2022-07-15</date>
-	</packageinformation>
-	
-	<authorinformation>
-		<author>Zaydowicz</author>
-	</authorinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
-	</requiredpackages>
-	
-	<optionalpackages>
-		<optionalpackage file="optionals/com.uz.wcf.absence.calendar.tar">com.uz.wcf.absence.calendar</optionalpackage>
-		<optionalpackage file="optionals/com.uz.wcf.absence.conversation.tar">com.uz.wcf.absence.conversation</optionalpackage>
-		<optionalpackage file="optionals/com.uz.tracker.absence.tar">com.uz.tracker.absence.tar</optionalpackage>
-		<optionalpackage file="optionals/com.uz.wcf.bot3.absence.tar">com.uz.wcf.bot3.absence.tar</optionalpackage>
-	</optionalpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
-	
-	<instructions type="install">
-		<instruction type="sql" run="standalone">install.sql</instruction>
-		<instruction type="file">files.tar</instruction>
-		<instruction type="cronjob">cronjob.xml</instruction>
-		<instruction type="eventListener">eventListener.xml</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="templateListener">templateListener.xml</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="objectType">objectType.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="box">box.xml</instruction>
-		<instruction type="page">page.xml</instruction>
-		<instruction type="menuItem">menuItem.xml</instruction>
-		<instruction type="coreObject">coreObject.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.2.1 pl 1">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption_541.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.3.*">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption_541.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.0">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption_541.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.0 pl 1">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
-		<instruction type="acpTemplate">acptemplates.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="option">option.xml</instruction>
-		<instruction type="userMenu">userMenu.xml</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="userGroupOption">userGroupOption_541.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.1">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.5.0">
-		<instruction type="file">files.tar</instruction>
-	</instructions>
+<package name="de.softcreatr.wcf.absence" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
+    <packageinformation>
+        <packagename>Absences</packagename>
+        <packagedescription>Allows users to specify absences from the community and indicate them to other users.</packagedescription>
+        <packagename language="de">Abwesenheiten</packagename>
+        <packagedescription language="de">Ermöglicht es Benutzern, Abwesenheiten von der Community anzugeben und diese anderen Benutzern anzuzeigen.</packagedescription>
+        <version>5.5.2</version>
+        <date>2022-09-18</date>
+    </packageinformation>
+
+    <authorinformation>
+        <author><![CDATA[SoftCreatR.dev]]></author>
+        <authorurl><![CDATA[https://softcreatr.dev]]></authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+    </requiredpackages>
+
+    <optionalpackages>
+        <!-- <optionalpackage file="optionals/de.softcreatr.wcf.absence.calendar.tar.gz">de.softcreatr.wcf.absence.calendar</optionalpackage> -->
+        <!-- <optionalpackage file="optionals/de.softcreatr.wcf.absence.conversation.tar.gz">de.softcreatr.wcf.absence.conversation</optionalpackage> -->
+        <!-- <optionalpackage file="optionals/de.softcreatr.tracker.absence.tar.gz">de.softcreatr.tracker.absence.tar</optionalpackage> -->
+        <!-- <optionalpackage file="optionals/de.softcreatr.wcf.bot3.absence.tar.gz">de.softcreatr.wcf.bot3.absence.tar</optionalpackage> -->
+    </optionalpackages>
+
+    <excludedpackages>
+        <excludedpackage version="5.6.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="*">com.uz.wcf.absence</excludedpackage>
+    </excludedpackages>
+
+    <instructions type="install">
+        <instruction type="sql" run="standalone">install.sql</instruction>
+        <instruction type="file" />
+        <instruction type="cronjob" />
+        <instruction type="eventListener" />
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+        <instruction type="option" />
+        <instruction type="objectType" />
+        <instruction type="userMenu" />
+        <instruction type="userGroupOption" />
+        <instruction type="language" />
+        <instruction type="box" />
+        <instruction type="page" />
+        <instruction type="menuItem" />
+        <instruction type="coreObject" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.2.1 pl 1">
+        <instruction type="file" />
+        <instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="option" />
+        <instruction type="userMenu" />
+        <instruction type="language" />
+        <instruction type="userGroupOption">userGroupOption_541.xml</instruction>
+    </instructions>
+
+    <instructions type="update" fromversion="5.3.*">
+        <instruction type="file" />
+        <instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="option" />
+        <instruction type="userMenu" />
+        <instruction type="language" />
+        <instruction type="userGroupOption">userGroupOption_541.xml</instruction>
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.0">
+        <instruction type="file" />
+        <instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="option" />
+        <instruction type="userMenu" />
+        <instruction type="language" />
+        <instruction type="userGroupOption">userGroupOption_541.xml</instruction>
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.0 pl 1">
+        <instruction type="file" />
+        <instruction type="script">acp/database/update_database_com.uz.wcf.absence_5.4.1.php</instruction>
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="option" />
+        <instruction type="userMenu" />
+        <instruction type="language" />
+        <instruction type="userGroupOption">userGroupOption_541.xml</instruction>
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.1">
+        <instruction type="file" />
+        <instruction type="template" />
+        <instruction type="language" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.0">
+        <instruction type="file" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.1">
+        <instruction type="file" />
+        <instruction type="cronjob" />
+        <instruction type="eventListener" />
+        <instruction type="acpTemplate" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+        <instruction type="option" />
+        <instruction type="objectType" />
+        <instruction type="userMenu" />
+        <instruction type="userGroupOption" />
+        <instruction type="language" />
+        <instruction type="box" />
+        <instruction type="page" />
+        <instruction type="menuItem" />
+        <instruction type="coreObject" />
+    </instructions>
 </package>
