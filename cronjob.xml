@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/cronjob.xsd">
-	<import>
-		<cronjob name="com.uz.wcf.absence.schedule">
-			<classname>wcf\system\cronjob\AbsenceCronjob</classname>
-			<description>Updates and schedules absences</description>
-			<description language="de">Aktualisiert und steuert Abwesenheiten</description>
-			<startminute>*/15</startminute>
-			<starthour>*</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-		<cronjob name="com.uz.wcf.absence.stats">
-			<classname>wcf\system\cronjob\AbsenceStatsCronjob</classname>
-			<description>Updates absences statistics</description>
-			<description language="de">Aktualisiert Abwesenheitsstatistik</description>
-			<startminute>0</startminute>
-			<starthour>2</starthour>
-			<startdom>*</startdom>
-			<startmonth>*</startmonth>
-			<startdow>*</startdow>
-			<active>1</active>
-			<canbeedited>1</canbeedited>
-			<canbedisabled>1</canbedisabled>
-		</cronjob>
-	</import>
+    <import>
+        <cronjob name="com.uz.wcf.absence.schedule">
+            <classname>wcf\system\cronjob\AbsenceCronjob</classname>
+            <description>Updates and schedules absences</description>
+            <description language="de">Aktualisiert und steuert Abwesenheiten</description>
+            <startminute>*/15</startminute>
+            <starthour>*</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+        <cronjob name="com.uz.wcf.absence.stats">
+            <classname>wcf\system\cronjob\AbsenceStatsCronjob</classname>
+            <description>Updates absences statistics</description>
+            <description language="de">Aktualisiert Abwesenheitsstatistik</description>
+            <startminute>0</startminute>
+            <starthour>2</starthour>
+            <startdom>*</startdom>
+            <startmonth>*</startmonth>
+            <startdow>*</startdow>
+            <active>1</active>
+            <canbeedited>1</canbeedited>
+            <canbedisabled>1</canbedisabled>
+        </cronjob>
+    </import>
 </data>

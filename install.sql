@@ -10,7 +10,7 @@ ALTER TABLE wcf1_user ADD FOREIGN KEY (absentRepID) REFERENCES wcf1_user (userID
 -- plugin
 DROP TABLE IF EXISTS wcf1_stat_absence;
 CREATE TABLE wcf1_stat_absence (
-	statID			INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-	count			INT(10),
-	time			INT(10)
+    statID            INT(10) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    count            INT(10),
+    time            INT(10)
 );
